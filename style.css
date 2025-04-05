@@ -165,28 +165,36 @@ section {
 
 #profile {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* important to allow wrapping on small screens */
-  gap: 2rem; /* adds spacing between image and text */
+  gap: 2rem; /* adds some nice space between image and text */
+  flex-wrap: wrap; /* THIS is important: allows wrapping on smaller screens */
   padding: 2rem;
 }
 
-
-.section__pic-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+@media (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+  }
+  
+  .section__pic-container img {
+    width: 180px; /* smaller image on phones */
+  }
+  
+  .section__text {
+    text-align: center;
+  }
 }
+
 
 .section__pic-container img {
   width: 300px;
-  max-width: 80%;
-  height: auto;
-  border-radius: 50%; /* optional for round image */
+  height: 300px;
+  border-radius: 50%;
   object-fit: cover;
 }
+
+
 
 .quote-container {
   width: 100%;
@@ -210,11 +218,11 @@ section {
 }
 
 
+
 .section__text {
-  flex: 1;
+  align-self: center;
   text-align: center;
 }
-
 
 .section__text p {
   font-weight: 600;
@@ -368,7 +376,11 @@ section {
   height: 80%;
 }
 
-
+.section__pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* EXPERIENCE SECTION */
 
@@ -394,18 +406,6 @@ section {
     flex: 1 1 100%;
   }
 }
-
-@media (max-width: 768px) {
-  #profile {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .section__pic-container img {
-    width: 200px;
-  }
-}
-
 
 
 #experience {
