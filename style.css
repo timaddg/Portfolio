@@ -178,7 +178,7 @@ section {
   }
   
   .section__pic-container img {
-    width: 180px; /* smaller image on phones */
+    width: 140px; /* smaller image on phones */
   }
   
   .section__text {
@@ -188,8 +188,8 @@ section {
 
 
 .section__pic-container img {
-  width: 265px;
-  height: 265px;
+  width: 245px;
+  height: 245px;
   border-radius: 50%;
   object-fit: cover;
 }
