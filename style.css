@@ -188,8 +188,8 @@ section {
 
 
 .section__pic-container img {
-  width: 300px;
-  height: 300px;
+  width: 265px;
+  height: 265px;
   border-radius: 50%;
   object-fit: cover;
 }
