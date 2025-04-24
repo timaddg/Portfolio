@@ -299,6 +299,18 @@ section {
   background: rgb(0, 0, 0);
 }
 
+.btn-color-1 {
+  background: linear-gradient(to right, #080f15, #0f2324);
+  color: white;
+  border: none;
+}
+
+.btn-color-1:hover {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  box-shadow: 0 6px 16px rgba(0, 242, 254, 0.3);
+}
+
+
 .btn-color-2 {
   background: none;
 }
@@ -370,6 +382,13 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
+.details-container,
+.color-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 
 .section-container {
   gap: 4rem;
@@ -460,6 +479,8 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
 }
 
 .project-title {
