@@ -63,38 +63,31 @@
             onclick="location.href='https://github.com/timaddg/'"
           />
         </div>
+        <div class="quote-container" style="text-align:center; margin:2rem 0;">
+          <p style="font-size:1.2rem; font-style:italic; color:#4b5563; max-width:600px; margin:0 auto;">
+            Small victories lead to large victories. You must build on the small to achieve the Great. - Monk who sold his ferrari
+          </p>
+        </div>
       </div>
     </section>
-    <section id="about">
-      <h1 class="title">About Me</h1>
-      <div class  = "quote-container">
-        <p>Small victories lead to large victories. You must build on the small to achieve the Great. - Monk who sold his ferrari</p>
-      </div>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years Full Stack Software Development <br /> Clarivate | Microsoft | Indian Institute of Science </p>
+    <section id="about" style="background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%); padding: 3rem 0; border-radius: 2rem; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin: 2rem 0;">
+      <div class="section-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; align-items:stretch;">
+        <div class="about-details-container" style="display:flex; flex-direction:column; gap:2rem; max-width:900px; width:100%;">
+          <div class="about-containers" style="display:flex; gap:2rem; justify-content:center; flex-wrap:wrap;">
+            <div class="details-container" style="background:#fff; border-radius:1.5rem; box-shadow:0 2px 12px rgba(0,0,0,0.06); padding:2rem 1.5rem; flex:1; min-width:220px; max-width:320px; text-align:center;">
+              <div class="icon-briefcase" style="font-size:48px; margin-bottom:1rem; color:#1e293b;">🏢</div>
+              <h3 style="font-size:1.2rem; color:#1e293b; margin-bottom:0.5rem;">Experience</h3>
+              <p style="color:#64748b;">2+ years in Software Engineering<br />Clarivate | Microsoft | IISc</p>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/graduation-hat.png.jpg"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.E. Information Science - Ramaiah Institute of Technology <br />M.Sc. Information Technology - Arizona State University</p>
+            <div class="details-container" style="background:#fff; border-radius:1.5rem; box-shadow:0 2px 12px rgba(0,0,0,0.06); padding:2rem 1.5rem; flex:1; min-width:220px; max-width:320px; text-align:center;">
+              <div class="icon-education" style="font-size:48px; margin-bottom:1rem; color:#1e293b;">🎓</div>
+              <h3 style="font-size:1.2rem; color:#1e293b; margin-bottom:0.5rem;">Education</h3>
+              <p style="color:#64748b;">M.Sc. IT - Arizona State University<br />B.E. - Ramaiah Institute of Technology</p>
             </div>
           </div>
-          <div class="text-container">
-            <p>
-              I'm a graduate student actively seeking a full-time opportunity as a Software Development Engineer, with a strong background in building scalable, high-impact software solutions. I have hands-on experience in fullstack development, cloud platforms, and database optimization, and I'm proficient in Java, Python, SQL, Spring Boot, Typescript, AngularJS and AWS. I’ve developed applications using microservices architecture and RESTful APIs, following Agile and SDLC best practices. I enjoy working closely with cross-functional teams to translate business needs into efficient technical solutions for customers.
+          <div class="text-container" style="background:#f1f5f9; border-radius:1.5rem; padding:2rem; box-shadow:0 1px 6px rgba(0,0,0,0.04); margin-top:1rem;">
+            <p style="font-size:1.1rem; color:#334155; line-height:1.7; text-align:center;">
+              I'm a graduate student actively seeking a full-time opportunity as a Software Development Engineer, with a strong background in building scalable, high-impact software solutions. I have hands-on experience in fullstack development, cloud platforms, and database optimization, and I'm proficient in Java, Python, SQL, Spring Boot, Typescript, AngularJS and AWS. I've developed applications using microservices architecture and RESTful APIs, following Agile and SDLC best practices. I enjoy working closely with cross-functional teams to translate business needs into efficient technical solutions for customers.
             </p>
           </div>
         </div>
@@ -104,6 +97,7 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
+        style="display:block; margin:2rem auto 0; cursor:pointer;"
       />
     </section>
     <section id="experience">
@@ -426,7 +420,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Amit Vasudev. All Rights Reserved.</p>
+      <p class="copyright">Copyright &#169; 2025 Amit Vasudev. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>

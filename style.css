@@ -9,10 +9,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: auto;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 0;
+  scroll-margin-top: 0;
 }
 
 p {
@@ -40,10 +46,6 @@ nav,
   height: 17vh;
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -103,10 +105,6 @@ a:hover {
   display: none;
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -229,8 +227,6 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: calc(4vh + 17vh);
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -246,9 +242,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem; /* adds some nice space between image and text */
-  flex-wrap: wrap; /* THIS is important: allows wrapping on smaller screens */
-  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding-top: 1rem;
+  position: relative;
+  top: 0;
+  max-width: 1200px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -265,15 +268,12 @@ section {
   }
 }
 
-
 .section__pic-container img {
   width: 245px;
   height: 245px;
   border-radius: 50%;
   object-fit: cover;
 }
-
-
 
 .quote-container {
   width: 100%;
@@ -295,8 +295,6 @@ section {
   margin: 0 auto;
   max-width: 700px;
 }
-
-
 
 .section__text {
   align-self: center;
@@ -326,8 +324,6 @@ section {
   margin-bottom: 0.5rem; 
 }
 
-
-
 #socials-container {
   display: flex;
   justify-content: center;
@@ -340,6 +336,11 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* BUTTONS */
@@ -432,7 +433,6 @@ section {
   padding-top: 0;
 }
 
-
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -474,8 +474,6 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -511,7 +509,6 @@ section {
     flex: 1 1 100%;
   }
 }
-
 
 #experience {
   position: relative;
@@ -622,10 +619,46 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-footer p {
-  text-align: center;
+footer .nav-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+footer .nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer .nav-links a:hover {
+  color: #007bff;
+}
+
+footer .copyright {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
 }
