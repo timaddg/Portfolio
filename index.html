@@ -10,7 +10,10 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">AmitFolio</div>
+      <div class="logo" onclick="toggleTheme()" style="cursor: pointer;">
+        AmitFolio
+        <span class="theme-icon" style="font-size: 0.9rem; margin-left: 0.5rem; opacity: 0.7; font-weight: 400;">light</span>
+      </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -18,10 +21,14 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Amit Vasudev</div>
+      <div class="logo" onclick="toggleTheme()" style="cursor: pointer;">
+        AmitFolio
+        <span class="theme-icon" style="font-size: 0.9rem; margin-left: 0.5rem; opacity: 0.7; font-weight: 400;">light</span>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -70,23 +77,25 @@
         </div>
       </div>
     </section>
-    <section id="about" style="background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%); padding: 3rem 0; border-radius: 2rem; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin: 2rem 0;">
-      <div class="section-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; align-items:stretch;">
-        <div class="about-details-container" style="display:flex; flex-direction:column; gap:2rem; max-width:900px; width:100%;">
-          <div class="about-containers" style="display:flex; gap:2rem; justify-content:center; flex-wrap:wrap;">
-            <div class="details-container" style="background:#fff; border-radius:1.5rem; box-shadow:0 2px 12px rgba(0,0,0,0.06); padding:2rem 1.5rem; flex:1; min-width:220px; max-width:320px; text-align:center;">
-              <div class="icon-briefcase" style="font-size:48px; margin-bottom:1rem; color:#1e293b;">🏢</div>
-              <h3 style="font-size:1.2rem; color:#1e293b; margin-bottom:0.5rem;">Experience</h3>
-              <p style="color:#64748b;">2+ years in Software Engineering<br />Clarivate | Microsoft | IISc</p>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="icon-briefcase">🏢</div>
+              <h3>Experience</h3>
+              <p>2+ years in Software Engineering<br />Clarivate | Microsoft | IISc</p>
             </div>
-            <div class="details-container" style="background:#fff; border-radius:1.5rem; box-shadow:0 2px 12px rgba(0,0,0,0.06); padding:2rem 1.5rem; flex:1; min-width:220px; max-width:320px; text-align:center;">
-              <div class="icon-education" style="font-size:48px; margin-bottom:1rem; color:#1e293b;">🎓</div>
-              <h3 style="font-size:1.2rem; color:#1e293b; margin-bottom:0.5rem;">Education</h3>
-              <p style="color:#64748b;">M.Sc. IT - Arizona State University<br />B.E. - Ramaiah Institute of Technology</p>
+            <div class="details-container">
+              <div class="icon-education">🎓</div>
+              <h3>Education</h3>
+              <p>M.Sc. IT - Arizona State University<br />B.E. - Ramaiah Institute of Technology</p>
             </div>
           </div>
-          <div class="text-container" style="background:#f1f5f9; border-radius:1.5rem; padding:2rem; box-shadow:0 1px 6px rgba(0,0,0,0.04); margin-top:1rem;">
-            <p style="font-size:1.1rem; color:#334155; line-height:1.7; text-align:center;">
+          <div class="text-container">
+            <p>
               I'm a graduate student actively seeking a full-time opportunity as a Software Development Engineer, with a strong background in building scalable, high-impact software solutions. I have hands-on experience in fullstack development, cloud platforms, and database optimization, and I'm proficient in Java, Python, SQL, Spring Boot, Typescript, AngularJS and AWS. I've developed applications using microservices architecture and RESTful APIs, following Agile and SDLC best practices. I enjoy working closely with cross-functional teams to translate business needs into efficient technical solutions for customers.
             </p>
           </div>
@@ -97,20 +106,19 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
-        style="display:block; margin:2rem auto 0; cursor:pointer;"
       />
     </section>
     <section id="experience">
       <p class="section__text__p1">Glimpse of my</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+      <div class="section-container">
         <div class="about-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
                 <div class="skill-icon" style="font-weight: bold; font-size: 1.8rem; background-color: #e3f2fd; color: #1976d2; border-radius: 8px; padding: 0.5rem;">A</div>
-                <div>
+                <div class ="skill-details">
                   <h3>Angular</h3>
                   <p>Experienced • 2+ years</p>
                 </div>
@@ -249,80 +257,60 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container"> 
-        <div class="about-containers"> 
-          <div class="details-container color-container"> 
+      <div class="section-container">
+        <div class="about-containers">
             <div class="article-container">
-              <img
-                src="./assets/SupervisedLogo.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <article>
+                <div class="skill-icon">
+                  <img src="./assets/SupervisedLogo.png" alt="Classification Model" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+                </div>
+                <div class="skill-details">
+                  <h3>Classification Model</h3>
+                  <p>School Classification • Phoenix Area</p>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/timaddg/School-Classification-Phoenix-Area'">
+                    Explore
+                  </button>
+                </div>
+              </article>
+              <article>
+                <div class="skill-icon">
+                  <img src="./assets/stock-price.png" alt="Stock Prediction" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+                </div>
+                <div class="skill-details">
+                  <h3>Stock Prediction</h3>
+                  <p>Trend Detection • Market Analysis</p>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/timaddg/Trend-Detection-in-Stock-Market/tree/main/FinalYear-Project'">
+                    Explore
+                  </button>
+                </div>
+              </article>
             </div>
-            <h2 class="experience-sub-title project-title">Classification Model</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/timaddg/School-Classification-Phoenix-Area'"
-              >
-                Explore
-            </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/Dashboard.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <article>
+                <div class="skill-icon">
+                  <img src="./assets/health_app.png" alt="Healthcare Companion" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+                </div>
+                <div class="skill-details">
+                  <h3>Healthcare Companion</h3>
+                  <p>Web Application • Health Management</p>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/timaddg/Healthcare-Companion-Web-Application'">
+                    Explore
+                  </button>
+                </div>
+              </article>
+              <article>
+                <div class="skill-icon">
+                  <img src="./assets/Dashboard.png" alt="Streaming Dashboard" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+                </div>
+                <div class="skill-details">
+                  <h3>Streaming Dashboard</h3>
+                  <p>Analytics Dashboard • Real-time Data</p>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/timaddg/Streaming_Analytics_Dashboard'">
+                    Explore
+                  </button>
+                </div>
+              </article>
             </div>
-            <h2 class="experience-sub-title project-title">Streaming Dashboard</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/timaddg/Streaming_Analytics_Dashboard'"
-              >
-                Explore
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/health_app.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Healthcare Companion</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/timaddg/Healthcare-Companion-Web-Application'"
-              >
-                Explore
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container"> 
-            <div class="article-container">
-              <img
-                src="./assets/stock-price.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Stock Prediction</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/timaddg/Trend-Detection-in-Stock-Market/tree/main/FinalYear-Project'"
-              >
-                Explore
-            </button>
-            </div>
-          </div>
         </div>
       </div>
       <img
