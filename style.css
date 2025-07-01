@@ -279,6 +279,13 @@ section {
   min-height: fit-content;
 }
 
+@media (max-width: 768px) {
+  section {
+    margin: 0 1rem;
+    padding: 2rem 0;
+  }
+}
+
 .section-container {
   display: flex;
   flex-direction: column;
@@ -288,6 +295,13 @@ section {
   width: 100%;
   box-sizing: border-box;
   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
 }
 
 /* PROFILE SECTION */
@@ -311,16 +325,20 @@ section {
 @media (max-width: 768px) {
   #profile {
     flex-direction: column;
-    margin-top: 17vh; /* Add top margin equal to hamburger nav height */
-    padding-top: 2rem;
+    margin-top: 0;
+    padding-top: calc(17vh + 2rem);
+    min-height: calc(100vh - 17vh);
+    gap: 1.5rem;
   }
   
   .section__pic-container img {
-    width: 140px; /* smaller image on phones */
+    width: 140px;
+    height: 140px;
   }
   
   .section__text {
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -335,6 +353,19 @@ section {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .quote-container {
+    margin: 1.5rem 0;
+    padding: 0 0.5rem;
+  }
+  
+  .quote-container p {
+    font-size: 1rem !important;
+    line-height: 1.5;
+  }
 }
 
 .project-img {
@@ -356,6 +387,8 @@ section {
   align-self: center;
   text-align: center;
   color: var(--text-primary);
+  width: 100%;
+  max-width: 600px;
 }
 
 .section__text p {
@@ -391,6 +424,7 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* ICONS */
@@ -411,6 +445,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
 }
 
 .btn {
