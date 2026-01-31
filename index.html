@@ -4,349 +4,175 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AmitFolio</title>
+    <title>Amit Vasudev — Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo" onclick="toggleTheme()" style="cursor: pointer;">
-        AmitFolio
-        <span class="theme-icon">light</span>
+    <header class="site-header">
+      <div class="header-brand">
+        <div class="logo">AMIT VASUDEV</div>
+        <a href="mailto:amitvasudev47@gmail.com" class="header-email">amitvasudev47@gmail.com</a>
       </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="header-nav">
+        <a href="#about">Info</a>
+        <a href="#projects">Select Works</a>
+      </nav>
+    </header>
 
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo" onclick="toggleTheme()" style="cursor: pointer;">
-        AmitFolio
-        <span class="theme-icon">light</span>
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-headline">
+            <span class="hero-headline-line">PORTFOLIO</span>
+            <span class="hero-headline-line hero-headline-truncated">PORTI</span>
+          </h1>
+          <div class="hero-about">
+            <p>I'm Amit, a Software Developer based in the US. I build scalable, high-impact software solutions with a focus on fullstack development and cloud platforms.</p>
+            <p>I've been working in software engineering for 2+ years across Clarivate, Microsoft, and IISc — with experience in Java, Python, TypeScript, Angular, AWS, and microservices.</p>
+          </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="hero-image-wrap">
+          <img src="./assets/main-profile-pic.png" alt="Amit Vasudev" class="hero-image" />
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/main-profile-pic.png" alt="Amit Vasudev profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Amit Vasudev</h1>
-        <p class="section__text__p2">Software Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+      </section>
+
+      <section id="about" class="section">
+        <p class="section-label">Get To Know More</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <div class="icon-briefcase">🏢</div>
+                <h3>Experience</h3>
+                <p>2+ years in Software Engineering<br />Clarivate | Microsoft | IISc</p>
+              </div>
+              <div class="details-container">
+                <div class="icon-education">🎓</div>
+                <h3>Education</h3>
+                <p>M.Sc. IT — Arizona State University<br />B.E. — Ramaiah Institute of Technology</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>I'm a graduate student actively seeking a full-time opportunity as a Software Development Engineer, with a strong background in building scalable, high-impact software solutions. I have hands-on experience in fullstack development, cloud platforms, and database optimization, and I'm proficient in Java, Python, SQL, Spring Boot, TypeScript, Angular and AWS. I've developed applications using microservices architecture and RESTful APIs, following Agile and SDLC best practices.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <p class="section-label">Glimpse of my</p>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-container">
+          <div class="about-containers experience-grid">
+            <div class="details-container">
+              <h3 class="experience-sub-title">Frontend</h3>
+              <div class="article-container">
+                <article><div class="skill-icon">A</div><div><h4>Angular</h4><p>2+ years</p></div></article>
+                <article><div class="skill-icon">TS</div><div><h4>TypeScript</h4><p>2+ years</p></div></article>
+                <article><div class="skill-icon">🌐</div><div><h4>HTML/CSS</h4><p>2+ years</p></div></article>
+                <article><div class="skill-icon">JS</div><div><h4>JavaScript</h4><p>2+ years</p></div></article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h3 class="experience-sub-title">Backend</h3>
+              <div class="article-container">
+                <article><div class="skill-icon">☕</div><div><h4>Java</h4><p>2+ years</p></div></article>
+                <article><div class="skill-icon">🐍</div><div><h4>Python</h4><p>2+ years</p></div></article>
+                <article><div class="skill-icon">C</div><div><h4>C/C++</h4><p>1+ years</p></div></article>
+                <article><div class="skill-icon">🔧</div><div><h4>Jenkins</h4><p>1+ years</p></div></article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h3 class="experience-sub-title">Database</h3>
+              <div class="article-container">
+                <article><div class="skill-icon">🗄️</div><div><h4>SQL Server</h4><p>2+ years</p></div></article>
+                <article><div class="skill-icon">🐬</div><div><h4>MySQL</h4><p>2+ years</p></div></article>
+                <article><div class="skill-icon">🗄️</div><div><h4>MongoDB</h4><p>1+ years</p></div></article>
+                <article><div class="skill-icon">🐘</div><div><h4>PostgreSQL</h4><p>1+ years</p></div></article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h3 class="experience-sub-title">Cloud & Tools</h3>
+              <div class="article-container">
+                <article><div class="skill-icon">☁️</div><div><h4>AWS</h4><p>1+ years</p></div></article>
+                <article><div class="skill-icon">🐳</div><div><h4>Docker</h4><p>1+ years</p></div></article>
+                <article><div class="skill-icon">☁️</div><div><h4>Azure</h4><p>1+ years</p></div></article>
+                <article><div class="skill-icon">📊</div><div><h4>Tableau</h4><p>2+ years</p></div></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <p class="section-label">Browse My Recent</p>
+        <h2 class="section-title">Select Works</h2>
+        <div class="section-container">
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="skill-icon"><img src="./assets/SupervisedLogo.png" alt="" /></div>
+              <div class="skill-details">
+                <h3>Classification Model</h3>
+                <p>School Classifier • Machine Learning</p>
+                <a href="https://github.com/timaddg/School-Classification-Phoenix-Area" class="btn-link">Explore</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="skill-icon"><img src="./assets/Stock.png" alt="" /></div>
+              <div class="skill-details">
+                <h3>Stock Prediction</h3>
+                <p>Trend Detection • Market Analysis</p>
+                <a href="https://github.com/timaddg/Trend-Detection-in-Stock-Market/tree/main/FinalYear-Project" class="btn-link">Explore</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="skill-icon"><img src="./assets/health_app.png" alt="" /></div>
+              <div class="skill-details">
+                <h3>Healthcare Companion</h3>
+                <p>Web Application • Health Management</p>
+                <a href="https://github.com/timaddg/Healthcare-Companion-Web-Application" class="btn-link">Explore</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="skill-icon"><img src="./assets/security-logo.png" alt="" /></div>
+              <div class="skill-details">
+                <h3>LogInvestigator Agent</h3>
+                <p>Web Application • AI-Driven Log Classifier</p>
+                <a href="https://github.com/timaddg/LogInvestigator-Agent" class="btn-link">Explore</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <h2 class="section-title">Reach out</h2>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <a href="mailto:amitvasudev47@gmail.com" class="contact-email">amitvasudev47@gmail.com</a>
+          </div>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/amit-vasudev/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/timaddg/'"
-          />
+          <a href="https://www.linkedin.com/in/amit-vasudev/" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/timaddg/" class="social-link" aria-label="GitHub">GitHub</a>
         </div>
-        <div class="quote-container">
-          <p>
-            Small victories lead to large victories. You must build on the small to achieve the Great. - Monk who sold his ferrari
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <div class="icon-briefcase">🏢</div>
-              <h3>Experience</h3>
-              <p>2+ years in Software Engineering<br />Clarivate | Microsoft | IISc</p>
-            </div>
-            <div class="details-container">
-              <div class="icon-education">🎓</div>
-              <h3>Education</h3>
-              <p>M.Sc. IT - Arizona State University<br />B.E. - Ramaiah Institute of Technology</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm a graduate student actively seeking a full-time opportunity as a Software Development Engineer, with a strong background in building scalable, high-impact software solutions. I have hands-on experience in fullstack development, cloud platforms, and database optimization, and I'm proficient in Java, Python, SQL, Spring Boot, Typescript, AngularJS and AWS. I've developed applications using microservices architecture and RESTful APIs, following Agile and SDLC best practices. I enjoy working closely with cross-functional teams to translate business needs into efficient technical solutions for customers.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Glimpse of my</p>
-      <h1 class="title">Experience</h1>
-      <div class="section-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <div class="skill-icon" style="font-weight: bold; font-size: 1.8rem; background-color: #e3f2fd; color: #1976d2; border-radius: 8px; padding: 0.5rem;">A</div>
-                <div class ="skill-details">
-                  <h3>Angular</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon" style="font-weight: bold; font-size: 1.8rem;">TS</div>
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">🌐</div>
-                <div>
-                  <h3>HTML/CSS</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon" style="font-weight: bold; font-size: 1.8rem;">JS</div>
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <div class="skill-icon">☕</div>
-                <div>
-                  <h3>Java</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">🐍</div>
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon" style="font-weight: bold; font-size: 1.8rem;">C</div>
-                <div>
-                  <h3>C/C++</h3>
-                  <p>Intermediate • 1+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">🔧</div>
-                <div>
-                  <h3>Jenkins</h3>
-                  <p>Intermediate • 1+ years</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Database Experience</h2>
-            <div class="article-container">
-              <article>
-                <div class="skill-icon">🗄️</div>
-                <div>
-                  <h3>SQL Server</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">🐬</div>
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">🗄️</div>
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Experienced • 1+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">🐘</div>
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Intermediate • 1+ years</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Cloud and Frameworks</h2>
-            <div class="article-container">
-              <article>
-                <div class="skill-icon">☁️</div>
-                <div>
-                  <h3>AWS</h3>
-                  <p>Intermediate • 1+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">🐳</div>
-                <div>
-                  <h3>Docker</h3>
-                  <p>Intermediate • 1+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">☁️</div>
-                <div>
-                  <h3>Azure</h3>
-                  <p>Intermediate • 1+ years</p>
-                </div>
-              </article>
-              <article>
-                <div class="skill-icon">📊</div>
-                <div>
-                  <h3>Tableau</h3>
-                  <p>Experienced • 2+ years</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="section-container">
-        <div class="about-containers"> 
-            <div class="article-container">
-              <article>
-                <div class="skill-icon">
-                  <img src="./assets/SupervisedLogo.png" alt="Classification Model" />
-            </div>
-                <div class="skill-details">
-                  <h3>Classification Model</h3>
-                  <p>School Classifier • Machine Learning
-                  </p>
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/timaddg/School-Classification-Phoenix-Area'">
-                Explore
-            </button>
-            </div>
-              </article>
-              <article>
-                <div class="skill-icon">
-                  <img src="./assets/Stock.png" alt="Stock Prediction" />
-          </div>
-                <div class="skill-details">
-                  <h3>Stock Prediction</h3>
-                  <p>Trend Detection • Market Analysis</p>
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/timaddg/Trend-Detection-in-Stock-Market/tree/main/FinalYear-Project'">
-                Explore
-              </button>
-            </div>
-              </article>
-          </div>
-            <div class="article-container">
-              <article>
-                <div class="skill-icon">
-                  <img src="./assets/health_app.png" alt="Healthcare Companion" />
-            </div>
-                <div class="skill-details">
-                  <h3>Healthcare Companion</h3>
-                  <p>Web Application • Health Management</p>
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/timaddg/Healthcare-Companion-Web-Application'">
-                Explore
-              </button>
-            </div>
-              </article>
-              <article>
-                <div class="skill-icon">
-                  <img src="./assets/security-logo.png" alt="Streaming Dashboard" />
-          </div>
-                <div class="skill-details">
-                  <h3>LogInvestigator Agent</h3>
-                  <p>Web Application • AI-Driven Log Classifier</p>
-                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/timaddg/LogInvestigator-Agent'">
-                Explore
-            </button>
-            </div>
-              </article>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <h1 class="title">Reach out</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">amitvasudev47@gmail.com</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav class="footer-nav">
+        <a href="#about">Info</a>
+        <a href="#projects">Select Works</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <p class="copyright">Copyright &#169; 2025 Amit Vasudev. All Rights Reserved.</p>
+      <p class="copyright">© 2025 Amit Vasudev</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,121 +1,128 @@
-@media screen and (min-width: 1201px) {
-  #desktop-nav {
-    display: flex !important;
-  }
-  #hamburger-nav {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-    padding-top: calc(4vh + 17vh);
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
+/* Responsive — PIA QUINN–style layout */
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none !important;
+  .site-header {
+    padding: 1.5rem 2.5rem;
   }
-  #hamburger-nav {
-    display: flex !important;
+
+  .hero {
+    padding: 2rem 2.5rem 3rem;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
+
+  .hero-image-wrap {
+    margin-left: -4%;
   }
-  #profile,
-  .section-container {
-    display: block;
+
+  .hero-image {
+    max-width: 420px;
+    min-height: 60vh;
   }
-  .arrow {
-    display: none;
+
+  .section {
+    padding: 3rem 2.5rem;
   }
-  section,
-  .section-container {
-    height: fit-content;
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    min-height: auto;
+    padding: 2rem 2rem 3rem;
   }
-  section {
-    margin: 0 5%;
-    padding-top: calc(4vh + 17vh);
+
+  .hero-content {
+    order: 1;
+    padding-right: 0;
   }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+
+  .hero-headline {
+    margin-bottom: 1.5rem;
+    font-size: clamp(3rem, 12vw, 5rem);
   }
-  .about-containers {
-    margin-top: 0;
+
+  .hero-about {
+    max-width: none;
+  }
+
+  .hero-image-wrap {
+    order: 2;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    min-height: 50vh;
+    max-height: 60vh;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: auto;
-    min-height: calc(100vh - 17vh);
-    margin-bottom: 0;
-    padding-top: calc(17vh + 1rem);
-    padding-bottom: 2rem;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.8rem !important;
-    color: #000000 !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    display: block !important;
-  }
-  .nav-links {
+  .site-header {
     flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
   }
-  .section__pic-container {
-    width: 140px;
-    height: 140px;
-    margin: 0 auto 1.5rem;
+
+  .header-nav {
+    gap: 1.25rem;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+
+  .hero {
+    padding: 1.5rem 1.5rem 2.5rem;
   }
-  .title {
-    font-size: 2rem;
+
+  .hero-headline {
+    font-size: clamp(2.5rem, 14vw, 4rem);
+    margin-bottom: 1.25rem;
   }
-  .text-container {
-    text-align: justify;
+
+  .hero-about p {
+    font-size: 0.95rem;
+  }
+
+  .hero-image {
+    min-height: 45vh;
+  }
+
+  .section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .about-containers .details-container {
+    max-width: none;
+  }
+
+  .article-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .site-footer {
+    padding: 1.5rem 1.5rem;
   }
 }
