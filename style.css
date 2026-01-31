@@ -60,10 +60,10 @@ a:hover {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-soft);
+  color: var(--accent);
 }
 
-.header-email {
+.header-tagline {
   font-size: 1.1rem;
   font-style: italic;
   color: var(--accent);
